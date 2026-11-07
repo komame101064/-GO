@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>พูดไทย タイ語カード</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#0E7C7B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌺</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&family=Noto+Sans+Thai:wght@400;600;700&family=Noto+Sans+JP:wght@400;600&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F6F7;--surface:#FFFFFF;--ink:#17283A;--sub:#41505D;--line:#D5DEE3;--accent:#0E7C7B;--accent-ink:#FFFFFF;--gold:#F2A900;--ok:#1B8A4B;--ng:#C0392B;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A24;--surface:#18283A;--ink:#EAF1F5;--sub:#9DB0BF;--line:#2B3F52;--accent:#3FC1BF;--accent-ink:#0F1A24;--gold:#F5B82E;--ok:#4CC882;--ng:#F0786B;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A24;--surface:#18283A;--ink:#EAF1F5;--sub:#9DB0BF;--line:#2B3F52;--accent:#3FC1BF;--accent-ink:#0F1A24;--gold:#F5B82E;--ok:#4CC882;--ng:#F0786B;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Sarabun","Noto Sans Thai",system-ui,sans-serif;line-height:1.6;font-size:17px}
+main{max-width:520px;margin:0 auto;padding:16px}
+h1{margin:4px 0 12px;font-size:1.25rem;font-family:"Sarabun","Noto Sans Thai","Noto Sans JP",sans-serif;display:flex;align-items:baseline;gap:10px}
+h1 small{font-size:.8rem;color:var(--sub);font-weight:400}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tabs button,.chips button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tabs button{flex:1;font-weight:600;padding:8px 5px;font-size:.85rem}
+.tabs button[aria-selected="true"],.chips button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.chips button{padding:5px 12px;font-size:.85rem}
+.prog{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-bottom:4px}
+.prog i{display:block;height:100%;background:var(--gold);width:0;transition:width .25s}
+.meta{font-size:.9rem;color:var(--sub);margin-bottom:12px;display:flex;justify-content:space-between}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px 20px;min-height:260px;text-align:center;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;width:100%;color:inherit;font:inherit}
+.th{font-family:"Sarabun","Noto Sans Thai",sans-serif;font-size:3.6rem;font-weight:600;line-height:1.5}
+.rom,td.r,td.i,.ipa{font-family:"Noto Sans","Noto Sans JP",system-ui,sans-serif}
+.ipa{font-size:1.2rem;line-height:1.6;color:var(--sub)}
+td.i{font-size:.95rem;color:var(--sub)}
+.rom{font-size:1.55rem;line-height:1.7;color:var(--accent);font-weight:600}
+.ja{font-size:1.3rem}
+.hint{color:var(--sub);font-size:.95rem}
+table{border-collapse:collapse;margin-top:10px;font-size:1.05rem;width:100%}
+th,td{border-top:1px solid var(--line);padding:6px 8px;text-align:left}
+th{color:var(--sub);font-weight:400;font-size:.9rem;border-top:0}
+td.t{font-family:"Sarabun","Noto Sans Thai",sans-serif;font-weight:600;font-size:1.15rem}
+.row{display:flex;gap:8px;margin-top:12px}
+.row button{flex:1;font:inherit;font-weight:600;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.row .go{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.opts{display:grid;gap:8px;margin-top:12px}
+.opts button{font:inherit;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-align:left}
+.opts button.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--surface))}
+.opts button.ng{border-color:var(--ng);background:color-mix(in srgb,var(--ng) 18%,var(--surface))}
+.say{background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--accent)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hide{display:none}
+.add h2{font-size:1rem;margin:20px 0 6px}
+.add p{margin:0 0 8px}
+.add textarea,.add input[type=text]{font:inherit;width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}
+.add textarea{min-height:110px;resize:vertical}
+.add input[type=file]{font:inherit;width:100%;color:var(--ink)}
+.cand{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.cand input[type=checkbox]{margin-top:10px;width:22px;height:22px;flex:none}
+.cand .f{flex:1;display:grid;gap:4px;min-width:0}
+.cand .f input{padding:6px 8px;font-size:.95rem}
+.cand input.th2{font-family:"Sarabun","Noto Sans Thai",sans-serif;font-size:1.2rem}
+.mt{font-family:"Sarabun","Noto Sans Thai",sans-serif;font-size:1.3rem;font-weight:600}
+.del{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 10px;border-radius:10px;cursor:pointer;flex:none}
+.del.sure{border-color:var(--ng);color:var(--ng)}
+button:disabled{opacity:.6;cursor:default}
+.card,.card *,#ex,#ex *{-webkit-user-select:text;user-select:text}
+tr[data-p]{cursor:pointer}
+#selbar{margin-top:10px}
+#selbar button{width:100%;font:inherit;font-weight:600;padding:12px;border-radius:12px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);cursor:pointer}
+#ex{margin-top:14px}
+.exbox{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.exh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.exh .del{margin-left:auto}
+.exi{padding:12px 0;border-top:1px solid var(--line)}
+.exth{font-family:"Sarabun","Noto Sans Thai",sans-serif;font-size:1.5rem;font-weight:600;line-height:1.6}
+.exth mark{background:color-mix(in srgb,var(--gold) 45%,transparent);color:inherit;border-radius:4px;padding:0 2px}
+.rom2{font-family:"Noto Sans","Noto Sans JP",system-ui,sans-serif;color:var(--accent);font-weight:600;font-size:1.05rem;line-height:1.7}
+.exi .ja{font-size:1.1rem}
+.exi details{margin-top:6px}
+.exi summary{cursor:pointer;color:var(--sub);font-size:.9rem}
+.say2{background:none;border:0;font-size:1.1rem;cursor:pointer;color:var(--accent);padding:0 4px}
+.exact{display:flex;gap:8px;margin-top:10px}
+.exact button{flex:1;font:inherit;font-weight:600;padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+#results{max-height:440px;overflow:auto}.result{padding:10px 0;border-bottom:1px solid var(--line)}.result .thmini{font-size:1.35rem;font-family:Sarabun,sans-serif;font-weight:600}.result input{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}.result button{margin-top:6px;padding:7px 12px;border-radius:9px;border:1px solid var(--accent);color:var(--accent);background:var(--surface)}#scene{width:100%;padding:10px;border-radius:10px;background:var(--surface);color:var(--ink);border:1px solid var(--line);margin:8px 0}#dialogue{margin:8px 0}.dlg{border-bottom:1px solid var(--line);padding:10px 0}.dlg:last-child{border:0}.dlg .thai{font-family:Sarabun,sans-serif;font-size:1.4rem}.dlg .translation{font-size:.95rem;color:var(--sub)}
+</style>
+</head>
+<body>
+<main>
+<h1>พูดไทย <small>タイ語カード</small></h1>
+<div class="tabs" role="tablist">
+  <button role="tab" id="t-card" aria-selected="true">カード</button>
+  <button role="tab" id="t-quiz" aria-selected="false">クイズ</button>
+  <button role="tab" id="t-add" aria-selected="false">追加</button>
+  <button role="tab" id="t-tools" aria-selected="false">学習管理</button>
+</div>
+<div class="hint" id="note" role="status"></div>
+<section id="v-card">
+  <div class="chips" id="chips"></div>
+  <div class="prog"><i id="bar"></i></div>
+  <div class="meta"><span id="pos"></span><span id="knownN"></span></div>
+  <button class="card" id="card" aria-live="polite"></button>
+  <div class="row">
+    <button id="again">まだ</button>
+    <button id="say" aria-label="発音を聞く">🔊</button>
+    <button class="go" id="got">覚えた</button>
+  </div>
+  <div class="row"><button id="exbtn">📖 文例</button><button id="tonebtn">🎵 声調ちがい</button></div>
+  <div id="selbar" class="hide"><button id="selgo"></button></div>
+  <div id="ex" aria-live="polite"></div>
+</section>
+<section id="v-quiz" class="hide">
+  <div class="meta"><span id="score"></span><span id="streak"></span></div>
+  <div class="card" style="cursor:default" id="q"></div>
+  <div class="opts" id="opts"></div>
+  <div class="row"><button class="go hide" id="next">次の問題</button></div>
+</section>
+<section id="v-tools" class="hide add">
+<h2>🔎 単語検索・編集</h2>
+<input type="text" id="search" placeholder="タイ語・意味・発音で検索" aria-label="単語検索">
+<div class="hint" id="searchcount"></div><div id="results"></div>
+<h2>📈 苦手単語の復習</h2><p class="hint">「まだ」で復習優先度が上がり、「覚えた」で次回の復習間隔が延びます。</p>
+<div id="reviewstats" class="hint"></div><div class="row"><button class="go" id="reviewstart">復習を始める</button><button id="reviewreset">復習履歴をリセット</button></div>
+<h2>💬 会話練習</h2><p class="hint">基本の会話はオフラインで練習できます。ChatGPTの回答はコピー＆貼り付けで取り込めます。</p>
+<select id="scene" aria-label="会話の場面"><option value="greeting">あいさつ</option><option value="food">食事</option><option value="work">仕事</option><option value="friend">友達との会話</option></select>
+<div class="exbox" id="dialogue"></div><div class="row"><button id="dialoguenext">次の会話</button><button id="dialogueai">ChatGPTで会話を作る</button></div>
+<h2>💾 バックアップ・復元</h2><p class="hint">覚えた記録・追加単語・単語編集・復習履歴をJSONファイルに保存します。</p>
+<div class="row"><button class="go" id="export">バックアップ保存</button></div>
+<input type="file" id="restore" accept=".json,application/json"><div class="row"><button id="import">バックアップから復元</button></div>
+<div class="hint" id="toolmsg" role="status"></div>
+<h2>🔊 発音・声調</h2><p class="hint">カード上に声調名と発音記号を表示します。読み上げは端末のタイ語音声に依存します。</p>
+<label for="rate">読み上げ速度 <span id="ratelabel">0.85</span></label><input type="range" id="rate" min="0.5" max="1.2" step="0.05" value="0.85">
+</section>
+<section id="v-add" class="hide add">
+  <p class="hint">Googleキープのメモや画像から、いつでも単語を追加できます。キープのメモは本文をコピーして貼り付け、画像はスクショや写真を選んでください。</p>
+  <h2>① テキストを貼り付け</h2>
+  <textarea id="txt" placeholder="タイ語の単語やフレーズ(意味つきでもOK)を貼り付け"></textarea>
+  <div class="row"><button id="paste">📋 クリップボードから貼り付け</button></div>
+  <p class="hint" style="margin-top:10px">Googleメモ(キープ)の書き出しファイル(.json / .html / .txt)も読み込めます:</p>
+  <input type="file" id="tf" accept=".txt,.md,.json,.html,.htm,.csv,text/*,application/json" multiple>
+  <h2>② 画像を選ぶ</h2>
+  <input type="file" id="img" accept="image/*" multiple>
+  <div class="row"><button class="go" id="read">ChatGPTで抽出する</button></div>
+  <div class="hint" id="addst" role="status"></div>
+  <div id="cands"></div>
+  <div class="row hide" id="candrow"><button id="candall">全選択/解除</button><button class="go" id="candadd">選んだ単語を追加</button></div>
+  <h2>手入力で1語追加</h2>
+  <div class="opts" style="margin-top:0">
+    <input type="text" id="mTh" placeholder="タイ語" lang="th" style="font-family:Sarabun,'Noto Sans Thai',sans-serif">
+    <input type="text" id="mRom" placeholder="発音(空欄ならChatGPTで補完)">
+    <input type="text" id="mJa" placeholder="意味(日本語)">
+  </div>
+  <div class="row"><button class="go" id="manual">追加</button></div>
+  <h2>追加した単語</h2>
+  <div id="mine"></div>
+</section>
+<section id="chatgpt-panel" class="hide exbox" style="margin:16px 0;border:2px solid var(--accent)">
+<h2 style="margin:0 0 8px">🤖 ChatGPT連携（追加料金なし）</h2>
+<p class="hint">① 指示文をコピー → ② ChatGPTを開いて貼り付け → ③ 回答のJSONをコピーして下に貼り付け → ④ 取り込む</p>
+<textarea id="chatgpt-prompt" readonly style="width:100%;min-height:110px;font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px"></textarea>
+<div class="row"><button id="chatgpt-copy">📋 指示文をコピー</button><button class="go" id="chatgpt-open">ChatGPTを開く ↗</button></div>
+<p id="chatgpt-image-hint" class="hint hide">画像は自動転送できません。ChatGPT側で同じ画像を添付してください。</p>
+<h3 style="font-size:1rem">ChatGPTの回答を貼り付け</h3>
+<textarea id="chatgpt-response" placeholder="ChatGPTが返したJSONをここに貼り付け" style="width:100%;min-height:130px;font:inherit;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px"></textarea>
+<div class="row"><button id="chatgpt-close">閉じる</button><button class="go" id="chatgpt-apply">回答を取り込む</button></div>
+<div id="chatgpt-status" class="hint" role="status"></div>
+</section>
+</main>
+<script>
+// [タイ語, 発音記号(声調つき), 意味, 構成(フレーズのみ)]
+const D=[
+["สวัสดี","sà-wàt-dii","こんにちは"],["ขอบคุณ","khɔ̀ɔp-khun","ありがとう"],["ขอโทษ","khɔ̌ɔ-thôot","ごめんなさい"],
+["ใช่","châi","そう / はい"],["ไม่","mâi","〜ない"],["กิน","kin","食べる"],["น้ำ","náam","水"],["อร่อย","à-rɔ̀i","おいしい"],
+["ไป","pai","行く"],["มา","maa","来る"],["ชอบ","chɔ̂ɔp","好き"],["คิดถึง","khít-thɯ̌ng","会いたい・恋しい"],
+["เหนื่อย","nɯ̀ai","疲れた"],["หิว","hǐu","お腹すいた"],["อะไร","à-rai","何"],["ที่ไหน","thîi-nǎi","どこ"],
+["เท่าไหร่","thâo-rài","いくら"],["แพง","phɛɛng","(値段が)高い"],["ถูก","thùuk","安い"],["สบายดี","sà-baai-dii","元気"],
+["พรุ่งนี้","phrûng-níi","明日"],["ตอนนี้","tɔɔn-níi","今"],["บ้าน","bâan","家"],["เพื่อน","phɯ̂an","友達"],
+["แฟน","fɛɛn","恋人"],["น่ารัก","nâa-rák","かわいい"],["จริงเหรอ","jing-rə̌ə","本当に?"],["ไม่เป็นไร","mâi-pen-rai","大丈夫・気にしないで"],
+["กินข้าวยัง","kin-khâao-yang","ご飯食べた?",[["กิน","kin","食べる"],["ข้าว","khâao","ご飯"],["ยัง","yang","もう〜した?"]]],
+["คิดถึงนะ","khít-thɯ̌ng-ná","会いたいな",[["คิดถึง","khít-thɯ̌ng","会いたい"],["นะ","ná","〜ね(やわらげる)"]]],
+["ไปไหนมา","pai-nǎi-maa","どこ行ってたの?",[["ไป","pai","行く"],["ไหน","nǎi","どこ"],["มา","maa","来た(〜してきた)"]]],
+["หิวแล้ว","hǐu-lɛ́ɛo","お腹すいた",[["หิว","hǐu","お腹がすく"],["แล้ว","lɛ́ɛo","もう(状態が変わった)"]]],
+["อร่อยมาก","à-rɔ̀i-mâak","めっちゃおいしい",[["อร่อย","à-rɔ̀i","おいしい"],["มาก","mâak","とても"]]],
+["ไว้เจอกันนะ","wáai-cəə-kan-ná","またね",[["ไว้","wáai","(あとで)"],["เจอ","cəə","会う"],["กัน","kan","お互い"],["นะ","ná","〜ね"]]],
+["ฉัน","chǎn","私"],["ผม","phǒm","僕(男性)"],["เรา","rao","私たち・私"],["เธอ","thəə","君・彼女"],["คุณ","khun","あなた"],["เขา","khǎo","彼・彼女"],
+["ใคร","khrai","誰"],["ทำไม","tham-mai","なぜ"],["ยังไง","yang-ngai","どう・どうやって"],["เมื่อไหร่","mɯ̂a-rài","いつ"],["ไหม","mǎi","〜か?"],
+["นี่","nîi","これ"],["นั่น","nân","あれ"],["ที่นี่","thîi-nîi","ここ"],["ครับ","khráp","〜です(男性)"],["ค่ะ","khâ","〜です(女性)"],
+["นะ","ná","〜ね"],["เลย","ləəi","〜よ・全然(強調)"],["แล้ว","lɛ́ɛo","もう・それから"],["ด้วย","dûai","〜も・一緒に"],["อีก","ìik","もっと・また"],["มาก","mâak","とても"],["นิดหน่อย","nít-nɔ̀i","ちょっと"],
+["หนึ่ง","nɯ̀ng","1"],["สอง","sɔ̌ɔng","2"],["สาม","sǎam","3"],["สี่","sìi","4"],["ห้า","hâa","5"],["หก","hòk","6"],["เจ็ด","jèt","7"],["แปด","pɛ̀ɛt","8"],["เก้า","kâao","9"],["สิบ","sìp","10"],["ร้อย","rɔ́ɔi","100"],["พัน","phan","1000"],
+["วันนี้","wan-níi","今日"],["เมื่อวาน","mɯ̂a-waan","昨日"],["เช้า","cháao","朝"],["เย็น","yen","夕方"],["คืน","khɯɯn","夜"],["เดี๋ยว","dǐao","ちょっと・あとで"],["ทุกวัน","thúk-wan","毎日"],["เวลา","wee-laa","時間"],
+["อยาก","yàak","〜したい"],["ต้อง","tɔ̂ng","〜しなきゃ"],["ได้","dâai","できる・OK"],["มี","mii","ある・いる・持つ"],["เป็น","pen","〜である"],["อยู่","yùu","いる・〜している"],["ทำ","tham","する・作る"],["พูด","phûut","話す"],["ดู","duu","見る"],["ฟัง","fang","聞く"],["รู้","rúu","知っている"],["เข้าใจ","khâo-jai","わかる"],["ให้","hâi","あげる・〜させる"],["เอา","ao","ほしい・選ぶ"],["ซื้อ","sɯ́ɯ","買う"],["จ่าย","jàai","払う"],["นอน","nɔɔn","寝る"],["ตื่น","tɯ̀ɯn","起きる"],["อ่าน","àan","読む"],["เรียน","rian","習う"],["ทำงาน","tham-ngaan","働く"],["รอ","rɔɔ","待つ"],["โทร","too","電話する"],["ช่วย","chûai","手伝う"],["ลอง","lɔɔng","試す"],["เที่ยว","thîao","遊びに行く"],["กลับ","klàp","帰る"],["ถึง","thɯ̌ng","着く"],["หา","hǎa","探す・会いに行く"],["ลืม","lɯɯm","忘れる"],["รัก","rák","愛する・好き"],["กลัว","klua","怖い"],["เจอ","cəə","会う・見つける"],
+["ดี","dii","良い"],["แย่","yɛ̂ɛ","ひどい・最悪"],["ใหญ่","yài","大きい"],["เล็ก","lék","小さい"],["ใหม่","mài","新しい"],["เร็ว","reo","速い"],["ช้า","cháa","遅い・ゆっくり"],["ไกล","klai","遠い"],["ใกล้","klâi","近い"],["ง่าย","ngâai","簡単"],["ยาก","yâak","難しい"],["เผ็ด","phèt","辛い"],["หวาน","wǎan","甘い"],["เค็ม","khem","しょっぱい"],["เยอะ","yə́","たくさん"],["สนุก","sà-nùk","楽しい"],["สวย","sǔai","きれい"],["หล่อ","lɔ̀ɔ","かっこいい"],["ยุ่ง","yûng","忙しい"],["ว่าง","wâang","暇"],["ง่วง","ngûang","眠い"],["ร้อน","rɔ́ɔn","暑い・熱い"],["หนาว","nǎao","寒い"],["เจ็บ","jèp","痛い"],["ไม่สบาย","mâi-sà-baai","体調が悪い"],["ดีใจ","dii-jai","うれしい"],["เสียใจ","sǐa-jai","悲しい・残念"],["โกรธ","krôot","怒る"],["เบื่อ","bùa","退屈・飽きた"],["อิ่ม","ìm","お腹いっぱい"],
+["ข้าว","khâao","ご飯"],["กาแฟ","kaa-fɛɛ","コーヒー"],["เบียร์","bia","ビール"],["ไก่","kài","鶏肉"],["หมู","mǔu","豚肉"],["ปลา","plaa","魚"],["ห้อง","hɔ̂ng","部屋"],["ห้องน้ำ","hɔ̂ng-náam","トイレ"],["โรงแรม","rooŋ-rɛɛm","ホテル"],["รถ","rót","車"],["เงิน","ngən","お金"],["โทรศัพท์","too-rá-sàp","電話"],["งาน","ngaan","仕事"],["ตลาด","tà-làat","市場"],["ทะเล","thá-lee","海"],["วัด","wát","お寺"],["หมอ","mɔ̌ɔ","医者"],["ยา","yaa","薬"],["ฝน","fǒn","雨"],["แม่","mɛ̂ɛ","母"],["พ่อ","phɔ̂ɔ","父"],["พี่","phîi","兄・姉・年上"],["น้อง","nɔ́ɔng","弟・妹・年下"],["คน","khon","人"],["ชื่อ","chɯ̂ɯ","名前"],["ภาษา","phaa-sǎa","言語"],["ญี่ปุ่น","yîi-pùn","日本"],["ไทย","thai","タイ"],["ราคา","raa-khaa","値段"],
+["เป็นไงบ้าง","pen-ngai-bâang","調子どう?",[["เป็น","pen","〜である"],["ไง","ngai","どう"],["บ้าง","bâang","〜くらい(やわらげ)"]]],
+["ทำอะไรอยู่","tham-à-rai-yùu","何してるの?",[["ทำ","tham","する"],["อะไร","à-rai","何"],["อยู่","yùu","〜している"]]],
+["อยู่ไหน","yùu-nǎi","どこにいる?",[["อยู่","yùu","いる"],["ไหน","nǎi","どこ"]]],
+["ถึงยัง","thɯ̌ng-yang","もう着いた?",[["ถึง","thɯ̌ng","着く"],["ยัง","yang","もう〜した?"]]],
+["นอนยัง","nɔɔn-yang","もう寝た?",[["นอน","nɔɔn","寝る"],["ยัง","yang","もう〜した?"]]],
+["ฝันดีนะ","fǎn-dii-ná","おやすみ(いい夢をね)",[["ฝัน","fǎn","夢を見る"],["ดี","dii","良い"],["นะ","ná","〜ね"]]],
+["ระวังนะ","ra-wang-ná","気をつけてね",[["ระวัง","ra-wang","気をつける"],["นะ","ná","〜ね"]]],
+["ได้เลย","dâai-ləəi","もちろん・いいよ",[["ได้","dâai","OK"],["เลย","ləəi","(強調)"]]],
+["ไม่รู้","mâi-rúu","知らない",[["ไม่","mâi","〜ない"],["รู้","rúu","知っている"]]],
+["ไม่เข้าใจ","mâi-khâo-jai","わからない",[["ไม่","mâi","〜ない"],["เข้าใจ","khâo-jai","理解する"]]],
+["พูดช้าๆหน่อย","phûut-cháa-cháa-nɔ̀i","もっとゆっくり話して",[["พูด","phûut","話す"],["ช้าๆ","cháa-cháa","ゆっくり"],["หน่อย","nɔ̀i","ちょっと(お願い)"]]],
+["พูดอีกที","phûut-ìik-thii","もう一回言って",[["พูด","phûut","話す"],["อีก","ìik","もう"],["ที","thii","回"]]],
+["ขอหน่อย","khɔ̌ɔ-nɔ̀i","ちょうだい",[["ขอ","khɔ̌ɔ","求める"],["หน่อย","nɔ̀i","ちょっと"]]],
+["เอาอันนี้","ao-an-níi","これにする",[["เอา","ao","選ぶ・ほしい"],["อัน","an","個"],["นี้","níi","この"]]],
+["ลดหน่อยได้ไหม","lót-nɔ̀i-dâai-mǎi","ちょっと安くならない?",[["ลด","lót","値引く"],["หน่อย","nɔ̀i","ちょっと"],["ได้","dâai","できる"],["ไหม","mǎi","〜か?"]]],
+["แพงไป","phɛɛng-pai","高すぎ",[["แพง","phɛɛng","高い"],["ไป","pai","〜すぎる"]]],
+["เช็คบิลด้วย","chék-bin-dûai","お会計お願い",[["เช็คบิล","chék-bin","会計"],["ด้วย","dûai","〜お願い"]]],
+["ห้องน้ำอยู่ไหน","hɔ̂ng-náam-yùu-nǎi","トイレどこ?",[["ห้องน้ำ","hɔ̂ng-náam","トイレ"],["อยู่","yùu","ある"],["ไหน","nǎi","どこ"]]],
+["ไปด้วยกันไหม","pai-dûai-kan-mǎi","一緒に行かない?",[["ไป","pai","行く"],["ด้วยกัน","dûai-kan","一緒に"],["ไหม","mǎi","〜か?"]]],
+["ว่างไหม","wâang-mǎi","暇?",[["ว่าง","wâang","暇"],["ไหม","mǎi","〜か?"]]],
+["รอแป๊บนะ","rɔɔ-pɛ́p-ná","ちょっと待ってね",[["รอ","rɔɔ","待つ"],["แป๊บ","pɛ́p","ちょっと"],["นะ","ná","〜ね"]]],
+["เดี๋ยวโทรหา","dǐao-too-hǎa","あとで電話するね",[["เดี๋ยว","dǐao","あとで"],["โทร","too","電話する"],["หา","hǎa","〜に"]]],
+["ขอบใจนะ","khɔ̀ɔp-jai-ná","ありがとね",[["ขอบใจ","khɔ̀ɔp-jai","ありがとう(くだけた)"],["นะ","ná","〜ね"]]],
+["รักนะ","rák-ná","好きだよ",[["รัก","rák","愛する・好き"],["นะ","ná","〜よ・ね"]]],
+["คิดถึงมากเลย","khít-thɯ̌ng-mâak-ləəi","すごく会いたい",[["คิดถึง","khít-thɯ̌ng","会いたい"],["มาก","mâak","とても"],["เลย","ləəi","(強調)"]]],
+["น่ารักจัง","nâa-rák-jang","かわいい〜",[["น่ารัก","nâa-rák","かわいい"],["จัง","jang","〜だなあ"]]],
+["สวยจัง","sǔai-jang","きれい〜",[["สวย","sǔai","きれい"],["จัง","jang","〜だなあ"]]],
+["เก่งมาก","kèng-mâak","すごい・上手",[["เก่ง","kèng","上手・すごい"],["มาก","mâak","とても"]]],
+["จริงดิ","jing-dì","マジで?",[["จริง","jing","本当"],["ดิ","dì","〜よ(砕けた)"]]],
+["บ้าไปแล้ว","bâa-pai-lɛ́ɛo","ありえない",[["บ้า","bâa","狂ってる"],["ไป","pai","(進んだ)"],["แล้ว","lɛ́ɛo","もう"]]],
+["ไม่ไหวแล้ว","mâi-wǎi-lɛ́ɛo","もう無理",[["ไม่","mâi","〜ない"],["ไหว","wǎi","耐えられる"],["แล้ว","lɛ́ɛo","もう"]]],
+["สู้ๆนะ","sûu-sûu-ná","がんばれ",[["สู้ๆ","sûu-sûu","がんばれ"],["นะ","ná","〜ね"]]],
+["เป็นห่วงนะ","pen-hùang-ná","心配してるよ",[["เป็นห่วง","pen-hùang","心配する"],["นะ","ná","〜よ"]]],
+["ขอโทษนะ","khɔ̌ɔ-thôot-ná","ごめんね",[["ขอโทษ","khɔ̌ɔ-thôot","ごめん"],["นะ","ná","〜ね"]]],
+["ไม่ได้ตั้งใจ","mâi-dâai-tâng-jai","わざとじゃない",[["ไม่ได้","mâi-dâai","〜していない"],["ตั้งใจ","tâng-jai","わざと・つもり"]]],
+["แล้วเจอกัน","lɛ́ɛo-cəə-kan","じゃあまた",[["แล้ว","lɛ́ɛo","じゃあ"],["เจอ","cəə","会う"],["กัน","kan","お互い"]]],
+["อิ่มแล้ว","ìm-lɛ́ɛo","お腹いっぱい",[["อิ่ม","ìm","満腹"],["แล้ว","lɛ́ɛo","もう"]]],
+["ไม่เผ็ดนะ","mâi-phèt-ná","辛くしないでね",[["ไม่","mâi","〜ない"],["เผ็ด","phèt","辛い"],["นะ","ná","〜ね"]]],
+["เหนื่อยจัง","nɯ̀ai-jang","疲れた〜",[["เหนื่อย","nɯ̀ai","疲れた"],["จัง","jang","〜だなあ"]]],
+["มีแฟนยัง","mii-fɛɛn-yang","恋人いる?",[["มี","mii","いる"],["แฟน","fɛɛn","恋人"],["ยัง","yang","もう・まだ"]]],
+["มาจากไหน","maa-jàak-nǎi","どこから来たの?",[["มา","maa","来る"],["จาก","jàak","〜から"],["ไหน","nǎi","どこ"]]],
+["มาจากญี่ปุ่น","maa-jàak-yîi-pùn","日本から来たよ",[["มา","maa","来る"],["จาก","jàak","〜から"],["ญี่ปุ่น","yîi-pùn","日本"]]]
+];
+// 発音表記 → IPA 変換
+const ON={kh:"kʰ",th:"tʰ",ph:"pʰ",ch:"tɕʰ",ng:"ŋ",c:"tɕ",j:"tɕ",y:"j"};
+const LONGV=/^(aa|ii|ee|oo|ɛɛ|ɔɔ|ɯɯ|əə|uu)/;
+const SPEC={ia:"iːa̯",ɯa:"ɯːa̯",ua:"uːa̯",iao:"iːa̯w",ɯai:"ɯːa̯j",uai:"uːa̯j"};
+const OVR={"wáai":"wáj"};
+function ipaSyl(s,last){
+  if(OVR[s])return OVR[s];
+  s=s.normalize("NFD");let tone="";
+  s=s.replace(/[\u0300\u0301\u0302\u030C]/g,m=>{tone=m;return""});
+  const m=s.match(/^([^aeiouɛɔɯə]*)([aeiouɛɔɯə]+)(.*)$/);
+  if(!m)return s.normalize("NFC");
+  let on=m[1].replace(/kh|th|ph|ch|ng|c|j|y/g,x=>ON[x]);
+  if(!on)on="ʔ";
+  const n=m[2];let nu,short=false;
+  if(SPEC[n])nu=SPEC[n];
+  else{
+    const mm=n.match(LONGV);let v,rest;
+    if(mm){v=n[0]+"ː";rest=n.slice(2)}else{v=n[0];rest=n.slice(1);short=true}
+    v=v.replace("ə","ɤ");
+    if(v==="ɔ"&&rest==="i"){v="ɔː";short=false}
+    rest=(rest==="i")?"j":(rest==="o"||rest==="u")?"w":rest;
+    if(rest)short=false;
+    nu=v+rest;
+  }
+  const co=m[3].replace(/ng/g,"ŋ");
+  nu=nu[0]+tone+nu.slice(1);
+  return(on+nu+co+(short&&!co&&last?"ʔ":"")).normalize("NFC");
+}
+const toneKey=r=>String(r).normalize("NFD").replace(/[\u0300\u0301\u0302\u030C]/g,"").normalize("NFC");
+const TN={"\u0300":"低","\u0302":"下降","\u0301":"高","\u030C":"上昇"};
+const toneName=r=>String(r).split("-").map(sy=>{const m=sy.normalize("NFD").match(/[\u0300\u0301\u0302\u030C]/);return m?TN[m[0]]:"中"}).join("・");
+function toneMates(d){
+  const k=toneKey(d[1]),seen=new Set();
+  return D.filter(x=>x[0]!==d[0]&&x[1]!==d[1]&&toneKey(x[1])===k&&!seen.has(x[0])&&seen.add(x[0])).slice(0,8);
+}
+function toneTable(a){
+  return `<div class="hint" style="margin-top:8px">声調ちがいの単語</div><table><tr><th>タイ語</th><th>声調</th><th>発音 / IPA</th><th>意味</th></tr>${a.map(x=>`<tr data-p="${E(JSON.stringify([x[0],x[1],x[2]]))}"><td class="t">${E(x[0])}</td><td>${E(toneName(x[1]))}</td><td class="r">${E(x[1])}<div class="i" style="font-size:.9rem;color:var(--sub)">${E(ipa(x[1]))}</div></td><td>${E(x[2])}</td></tr>`).join("")}</table><div class="hint">行をタップすると、その単語の文例が出ます</div>`;
+}
+const ipaS=r=>"/"+String(r).trim().split(/\s+/).map(w=>w.split("-").map((s,k,a)=>ipaSyl(s,k===a.length-1)).join(".")).join(" ")+"/";
+const ipa=r=>{const a=r.split("-");return"/"+a.map((s,k)=>ipaSyl(s,k===a.length-1)).join(".")+"/"};
+let known=new Set(),filter="all",deck=[],i=0,shown=false;
+try{known=new Set(JSON.parse(localStorage.getItem("thai-known")||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem("thai-known",JSON.stringify([...known]))}catch(e){}};
+const $=id=>document.getElementById(id);
+const shuffle=a=>{a=[...a];for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a};
+const F={all:"すべて",w:"単語",p:"フレーズ",todo:"まだ",c:"追加分",review:"復習"};
+const E=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function build(){
+  const idx=D.map((d,k)=>k).filter(k=>filter==="all"||(filter==="w"&&!D[k][3])||(filter==="p"&&D[k][3])||(filter==="todo"&&!known.has(D[k][0]))||(filter==="c"&&k>=BASE)||(filter==="review"&&reviewDue(D[k][0])));
+  deck=shuffle(idx);i=0;shown=false;
+}
+const note=m=>{$("note").textContent=m;clearTimeout(note.t);note.t=setTimeout(()=>{$("note").textContent=""},6000)};
+let voices=[];
+const loadV=()=>{try{voices=speechSynthesis.getVoices()}catch(e){}};
+try{loadV();speechSynthesis.onvoiceschanged=loadV}catch(e){}
+function say(t){
+  if(!("speechSynthesis" in window)){note("このビューアは音声に未対応のため、Google翻訳の発音ページを開きます");try{window.open("https://translate.google.com/?sl=th&tl=ja&op=translate&text="+encodeURIComponent(t),"_blank","noopener")}catch(e){}return}
+  try{
+    loadV();
+    const u=new SpeechSynthesisUtterance(t);u.lang="th-TH";u.rate=Number(localStorage.getItem("thai-rate")||"0.85");
+    const v=voices.find(x=>/^th/i.test(x.lang));
+    if(v)u.voice=v;else note("タイ語の音声が見つかりません。端末の設定でタイ語(Thai)の音声を追加すると鳴ります");
+    u.onerror=()=>note("音声を再生できませんでした。端末の音量やサイレントモードを確認してください");
+    if(speechSynthesis.speaking||speechSynthesis.pending)speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  }catch(e){note("音声を再生できませんでした")}
+}
+function drawChips(){
+  $("chips").innerHTML=Object.keys(F).map(k=>`<button data-f="${k}" aria-pressed="${k===filter}">${F[k]}</button>`).join("");
+}
+function drawCard(){
+  const c=$("card");
+  $("knownN").textContent=`覚えた ${known.size} / ${D.length}`;
+  $("bar").style.width=(known.size/D.length*100)+"%";
+  if(!deck.length){c.innerHTML=filter==="c"?'<div class="ja">追加した単語はまだありません</div><div class="hint">「追加」タブから入れてね</div>':'<div class="ja">ここは全部覚えました 🎉</div><div class="hint">フィルターを変えてみてね</div>';$("pos").textContent="";return}
+  const d=D[deck[i]];
+  $("pos").textContent=`${i+1} / ${deck.length}`;
+  let h=`<div class="th">${E(d[0])}</div><div class="ipa">${E(ipa(d[1]))}</div><div class="hint">声調: ${E(toneName(d[1]))}</div>`;
+  if(!shown){h+='<div class="hint">タップして答えを見る</div>'}
+  else{
+    h+=`<div class="rom">${E(d[1])}</div><div class="ja">${E(d[2])}</div>`;
+    const tm=toneMates(d);if(tm.length)h+=toneTable(tm);
+    if(d[3])h+=`<table><tr><th>タイ語</th><th>発音</th><th>IPA</th><th>意味</th></tr>${d[3].map(p=>`<tr data-p="${E(JSON.stringify([p[0],p[1],p[2]]))}"><td class="t">${E(p[0])}</td><td class="r">${E(p[1])}</td><td class="i">${E(ipa(p[1]))}</td><td>${E(p[2])}</td></tr>`).join("")}</table><div class="hint">単語の行をタップすると文例が出ます</div>`;
+  }
+  c.innerHTML=h;
+}
+function step(learned){
+  if(!deck.length)return;
+  const k=deck[i];
+  if(learned)known.add(D[k][0]);else known.delete(D[k][0]);
+   updateReview(D[k][0],learned);
+  save();shown=false;i++;
+  if(i>=deck.length){build()}
+  drawCard();
+}
+$("card").onclick=e=>{
+  const tr=e.target.closest&&e.target.closest("tr[data-p]");
+  if(tr){try{const p=JSON.parse(tr.dataset.p);openEx({th:p[0],rom:p[1],ja:p[2]})}catch(x){}return}
+  if(window.getSelection&&String(getSelection()).trim())return;
+  if(!deck.length)return;shown=!shown;drawCard();if(shown)say(D[deck[i]][0])
+};
+$("say").onclick=()=>{if(deck.length)say(D[deck[i]][0])};
+$("got").onclick=()=>step(true);
+$("again").onclick=()=>step(false);
+$("chips").onclick=e=>{const f=e.target.dataset.f;if(!f)return;filter=f;build();drawChips();drawCard()};
+
+// クイズ
+let sc=0,tot=0,st=0,ans=null;
+function quiz(){
+  ans=D[Math.floor(Math.random()*D.length)];
+  const wrong=shuffle(D.filter(d=>d[2]!==ans[2])).slice(0,3);
+  const opts=shuffle([ans,...wrong]);
+  $("q").innerHTML=`<div class="th">${E(ans[0])}</div><div class="ipa">${E(ipa(ans[1]))}</div><div class="hint">意味はどれ?</div>`;
+  $("opts").innerHTML=opts.map(o=>`<button data-a="${E(o[0])}">${E(o[2])}</button>`).join("");
+  $("next").classList.add("hide");
+  $("score").textContent=`正解 ${sc} / ${tot}`;$("streak").textContent=st>1?`${st}問連続 🔥`:"";
+}
+$("opts").onclick=e=>{
+  const b=e.target.closest("button");if(!b||$("next").classList.contains("hide")===false)return;
+  const ok=b.dataset.a===ans[0];tot++;ok?(sc++,st++):(st=0);
+  [...$("opts").children].forEach(x=>{x.disabled=true;if(x.dataset.a===ans[0])x.classList.add("ok")});
+  if(!ok)b.classList.add("ng");
+  $("q").innerHTML=`<div class="th">${E(ans[0])}</div><div class="ipa">${E(ipa(ans[1]))}</div><div class="rom">${E(ans[1])}</div><div class="ja">${E(ans[2])}</div>`;
+  $("score").textContent=`正解 ${sc} / ${tot}`;$("streak").textContent=st>1?`${st}問連続 🔥`:"";
+  say(ans[0]);$("next").classList.remove("hide");
+};
+$("next").onclick=quiz;
+
+function tab(n){
+  ["card","quiz","add","tools"].forEach(k=>{$("v-"+k).classList.toggle("hide",k!==n);$("t-"+k).setAttribute("aria-selected",k===n)});
+  if(n==="quiz"&&!ans)quiz();
+  if(n==="add")drawMine();if(n==="tools"){drawSearch();drawReviewStats();drawDialogue()}
+}
+$("t-tools").onclick=()=>tab("tools");
+$("t-card").onclick=()=>tab("card");$("t-quiz").onclick=()=>tab("quiz");$("t-add").onclick=()=>tab("add");
+
+// ---- 単語の追加(テキスト・画像・手入力) ----
+const CK="thai-custom";let custom=[],cands=[];
+try{custom=JSON.parse(localStorage.getItem(CK)||"[]").filter(e=>Array.isArray(e)&&[0,1,2].every(k=>typeof e[k]==="string"))}catch(e){}
+const BASE=D.length;
+custom.forEach(e=>D.push(e));
+const saveC=()=>{try{localStorage.setItem(CK,JSON.stringify(custom))}catch(e){note("この環境では保存できません(今回だけ有効)")}};
+const addMsg=m=>{$("addst").textContent=m};
+// No API calls or API keys. ChatGPT is opened separately and responses are pasted back.
+let aiPending=null;
+function openChatGPTFlow(prompt,receive,images=false){
+  aiPending=receive;
+  const panel=document.getElementById("chatgpt-panel");
+  panel.classList.remove("hide");
+  document.getElementById("chatgpt-prompt").value=prompt;
+  document.getElementById("chatgpt-response").value="";
+  document.getElementById("chatgpt-image-hint").classList.toggle("hide",!images);
+  panel.scrollIntoView({behavior:"smooth",block:"start"});
+}
+async function copyPrompt(){
+  const value=document.getElementById("chatgpt-prompt").value;
+  try{await navigator.clipboard.writeText(value);document.getElementById("chatgpt-status").textContent="指示文をコピーしました。ChatGPTで貼り付けて送信してください。"}
+  catch(e){document.getElementById("chatgpt-prompt").focus();document.getElementById("chatgpt-prompt").select();document.getElementById("chatgpt-status").textContent="指示文を選択しました。長押しでコピーしてください。"}
+}
+document.getElementById("chatgpt-copy").onclick=copyPrompt;
+document.getElementById("chatgpt-open").onclick=()=>window.open("https://chatgpt.com/","_blank","noopener");
+document.getElementById("chatgpt-close").onclick=()=>document.getElementById("chatgpt-panel").classList.add("hide");
+document.getElementById("chatgpt-apply").onclick=()=>{
+  if(!aiPending)return;
+  const t=document.getElementById("chatgpt-response").value.trim();
+  if(!t){document.getElementById("chatgpt-status").textContent="ChatGPTの回答を貼り付けてください。";return}
+  try{aiPending(t);document.getElementById("chatgpt-panel").classList.add("hide")}
+  catch(e){document.getElementById("chatgpt-status").textContent="回答を読み取れませんでした。ChatGPTのJSON回答をすべてコピーしてください。"}
+};
+const ROMRULE="rom は声調つきのローマ字。声調は 中=無印 / 低=è / 下降=ê / 高=é / 上昇=ě のように母音に付ける。長母音は母音を重ねる(náam, dii)。子音は kh th ph ch j y ng、母音は ɛ ɔ ɯ ə を使う。例: สวัสดี=sà-wàt-dii / ขอบคุณ=khɔ̀ɔp-khun / เหนื่อย=nɯ̀ai / จริงเหรอ=jing-rə̌ə";
+const PROMPT=`あなたはタイ語学習アプリの単語抽出係です。入力(テキストまたは画像)に含まれるタイ語の単語・フレーズを抽出し、JSON配列だけを返してください(前置き・説明・コードフェンスは禁止)。
+各要素の形: {"th":"タイ語","rom":"発音記号","ja":"日本語の意味","parts":[["タイ語","発音","意味"]]}
+ルール:
+- 画像が添付されている場合は、画像内のタイ語(スクショ・写真・手書き)も読み取る
+- rom は音節をハイフンでつなぎ、声調つきのローマ字。声調は 中=無印 / 低=è / 下降=ê / 高=é / 上昇=ě のように母音に付ける。長母音は母音を重ねる(náam, dii)。子音は kh th ph ch j y ng、母音は ɛ ɔ ɯ ə を使う。例: สวัสดี=sà-wàt-dii / ขอบคุณ=khɔ̀ɔp-khun / เหนื่อย=nɯ̀ai / จริงเหรอ=jing-rə̌ə
+- ja は入力に日本語の意味があればそれを使い、なければ自然な日本語で短く書く
+- 2語以上のフレーズだけ parts に1語ずつの分解を入れる。単語は parts を省く
+- 友達・恋人に使う口語・砕けた表現はそのまま残す
+- タイ語が見つからなければ []`;
+function parseJSON(t){
+  const a=t.indexOf("["),b=t.lastIndexOf("]");if(a<0||b<a)throw new Error("json");
+  return JSON.parse(t.slice(a,b+1)).filter(x=>x&&typeof x.th==="string"&&typeof x.rom==="string"&&typeof x.ja==="string").map(x=>({th:x.th,rom:x.rom,ja:x.ja,parts:Array.isArray(x.parts)?x.parts.filter(p=>Array.isArray(p)&&p.length>=3).map(p=>[String(p[0]),String(p[1]),String(p[2])]):[]}));
+}
+function parseLines(t){
+  return t.split(/\n/).map(l=>l.split(/\s*[|\t]\s*/)).filter(a=>a.length>=3&&a[0].trim()).map(a=>({th:a[0].trim(),rom:a[1].trim(),ja:a[2].trim(),parts:[]}));
+}
+function showC(c){
+  cands=c.map(x=>{const dup=D.some(d=>d[0]===x.th);return{...x,dup,on:!dup}});
+  drawC();
+  addMsg(cands.length?`${cands.length}件見つかりました。内容を直して、追加したいものを選んでね`:"単語が見つかりませんでした");
+}
+function drawC(){
+  $("cands").innerHTML=cands.map((c,k)=>`<div class="cand"><input type="checkbox" data-k="${k}" ${c.on?"checked":""} aria-label="追加する"><div class="f"><input type="text" class="th2" data-k="${k}" data-f="th" value="${E(c.th)}" lang="th"><input type="text" data-k="${k}" data-f="rom" value="${E(c.rom)}"><input type="text" data-k="${k}" data-f="ja" value="${E(c.ja)}">${c.dup?'<span class="hint">同じタイ語が登録済みです</span>':""}</div></div>`).join("");
+  $("candrow").classList.toggle("hide",!cands.length);
+}
+$("cands").oninput=e=>{const t=e.target,k=t.dataset.k;if(k!==undefined&&t.dataset.f)cands[k][t.dataset.f]=t.value};
+$("cands").onchange=e=>{const t=e.target;if(t.type==="checkbox")cands[t.dataset.k].on=t.checked};
+$("candall").onclick=()=>{const on=!cands.every(c=>c.on);cands.forEach(c=>c.on=on);drawC()};
+function addEntries(list){
+  let n=0;
+  list.forEach(c=>{
+    const th=c.th.trim(),rom=c.rom.trim().replace(/\s+/g,"-"),ja=c.ja.trim();
+    if(!th||!rom||!ja||D.some(d=>d[0]===th&&d[2]===ja))return;
+    const e=[th,rom,ja];if(c.parts&&c.parts.length>1)e.push(c.parts);
+    custom.push(e);D.push(e);n++;
+  });
+  if(n){saveC();build();drawChips();drawCard();drawMine()}
+  return n;
+}
+$("candadd").onclick=()=>{
+  const n=addEntries(cands.filter(c=>c.on));
+  if(n){cands=[];drawC();$("txt").value="";$("img").value="";addMsg(`${n}語を追加しました。カードに出てきます 🌺`)}
+  else addMsg("追加できる単語がありません(未入力か、すでに登録済み)");
+};
+async function prepImg(f){
+  const mk=(w,h,draw)=>{const sc=Math.min(1,1600/Math.max(w,h));const c=document.createElement("canvas");c.width=Math.max(1,Math.round(w*sc));c.height=Math.max(1,Math.round(h*sc));const g=c.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,c.width,c.height);draw(g,c.width,c.height);return new Promise((res,rej)=>c.toBlob(b=>b?res(b):rej(new Error("toBlob")),"image/jpeg",.9))};
+  try{const bmp=await createImageBitmap(f);const r=await mk(bmp.width,bmp.height,(g,w,h)=>g.drawImage(bmp,0,0,w,h));if(bmp.close)bmp.close();return r}catch(e){}
+  const url=await new Promise((res,rej)=>{const fr=new FileReader();fr.onload=()=>res(fr.result);fr.onerror=()=>rej(fr.error);fr.readAsDataURL(f)});
+  const im=await new Promise((res,rej)=>{const x=new Image();x.onload=()=>res(x);x.onerror=()=>rej(new Error("decode"));x.src=url});
+  return mk(im.naturalWidth,im.naturalHeight,(g,w,h)=>g.drawImage(im,0,0,w,h));
+}
+function extract(t,files){
+  if(!t&&!files.length){addMsg("テキストまたは画像を選んでください");return}
+  const simple=t?parseLines(t):[];
+  if(simple.length&&!files.length){showC(simple);return}
+  const prompt=PROMPT+"\n\n--- 入力 ---\n"+(t||"添付画像を読み取ってください")+"\nJSON配列だけで返してください。";
+  openChatGPTFlow(prompt,result=>{showC(parseJSON(result));addMsg("ChatGPTの回答を取り込みました。内容を確認して追加してください。")},files.length>0);
+  if(files.length)addMsg("ChatGPTを開き、選択した画像をChatGPT側でも添付してください（画像は自動転送されません）。");
+}
+$("paste").onclick=async()=>{
+  try{
+    const t=await navigator.clipboard.readText();
+    if(!t.trim()){addMsg("クリップボードが空でした");return}
+    $("txt").value=($("txt").value?$("txt").value.trim()+"\n":"")+t;
+    addMsg("貼り付けました。「ChatGPTで抽出する」を押してね");
+  }catch(e){addMsg("貼り付けできませんでした。上の枠を長押しして貼り付けてね")}
+};
+function noteText(name,raw){
+  const t=raw.trim();
+  if(/\.json$/i.test(name)||/^[\[{]/.test(t)){
+    try{const j=JSON.parse(t);return(Array.isArray(j)?j:[j]).map(n=>[n&&n.title,n&&n.textContent,...(n&&Array.isArray(n.listContent)?n.listContent.map(x=>x&&x.text):[])].filter(x=>typeof x==="string"&&x).join("\n")).join("\n\n")}catch(e){}
+  }
+  if(/\.html?$/i.test(name)||/^<(!doctype|html)/i.test(t)){
+    try{const d=new DOMParser().parseFromString(t,"text/html");d.querySelectorAll("script,style").forEach(x=>x.remove());d.querySelectorAll("br").forEach(b=>b.replaceWith("\n"));return(d.body?d.body.textContent:"").replace(/\n{3,}/g,"\n\n")}catch(e){}
+  }
+  return t;
+}
+$("tf").onchange=async()=>{
+  const fs=[...$("tf").files];if(!fs.length)return;
+  try{
+    const parts=[];for(const f of fs)parts.push(noteText(f.name,await f.text()));
+    let t=parts.filter(Boolean).join("\n\n");
+    let msg=`${fs.length}件のメモを読み込みました。「ChatGPTで抽出する」を押してね`;
+    if(t.length>12000){t=t.slice(0,12000);msg="長いので先頭の一部だけ読み込みました。残りは分けて追加してね"}
+    $("txt").value=($("txt").value?$("txt").value.trim()+"\n\n":"")+t;
+    addMsg(msg);
+  }catch(e){addMsg("ファイルを読み込めませんでした")}
+  $("tf").value="";
+};
+$("read").onclick=()=>extract($("txt").value.trim(),[...$("img").files]);
+$("manual").onclick=()=>{
+  const th=$("mTh").value.trim(),rom=$("mRom").value.trim(),ja=$("mJa").value.trim();
+  if(!th||!ja){addMsg("タイ語と意味を入れてね");return}
+  if(rom){
+    if(addEntries([{th,rom,ja,parts:[]}])){$("mTh").value=$("mRom").value=$("mJa").value="";addMsg("追加しました 🌺")}
+    else addMsg("すでに登録済みです");
+  }else extract(th+" = "+ja,[]);
+};
+function drawMine(){
+  $("mine").innerHTML=custom.length?custom.map((e,k)=>`<div class="cand"><div class="f"><span class="mt">${E(e[0])}</span><span class="hint">${E(e[1])} ・ ${E(e[2])}</span></div><button class="del" data-k="${k}">削除</button></div>`).join(""):'<div class="hint">まだありません</div>';
+}
+$("mine").onclick=e=>{
+  const b=e.target.closest(".del");if(!b)return;
+  if(!b.classList.contains("sure")){b.classList.add("sure");b.textContent="もう一度タップ";return}
+  custom.splice(+b.dataset.k,1);D.length=BASE;custom.forEach(x=>D.push(x));
+  saveC();build();drawChips();drawCard();drawMine();
+};
+
+// ---- 文例 ----
+let exW=null,exBusy=false,selText="",exItems=[],exBack=null;
+const LBL={ex:"文例",long:"長文",tone:"声調ちがい"};
+const hl=(th,w)=>{const a=E(th),b=E(w);return b?a.split(b).join(`<mark>${b}</mark>`):a};
+function openEx(w,kind,back){
+  exW=w;exBack=back||null;gen(kind||"ex",false);
+  $("chatgpt-panel").scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function exPrompt(w,kind){
+  const info=`単語: ${w.th}${w.rom?`(発音: ${w.rom}`:""}${w.ja?`${w.rom?"、":"("}意味: ${w.ja}`:""}${(w.rom||w.ja)?")":""}`;
+  const fmt=`{"items":[{"th":"文","rom":"文全体の発音","ja":"日本語訳","parts":[["タイ語","発音","意味"]]}]}`;
+  const common=`- 友達や恋人と話すときのような、ネイティブが実際に使う自然な口語・砕けた言い方で\n- ${ROMRULE}\n- rom は単語どうしを半角スペース、単語の中の音節をハイフンでつなぐ\n- parts は文を単語ごとに順番どおり分解(語尾・助詞も含める)。romは音節をハイフンでつなぐ\n- 出力はJSONのみ(前置き・説明・コードフェンス禁止): ${fmt}`;
+  if(kind==="tone")return `あなたはタイ語の先生です。次の単語と「子音・母音・末子音が同じで、声調だけが違う」実在のタイ語の単語を、元の単語を含めて5〜6語挙げてください。\n${info}\n条件:\n- 日常でよく使う語を優先する\n- 各要素に th、rom(声調つき)、ja(日本語の意味)、tone(中/低/下降/高/上昇のどれか)を入れる\n- ${ROMRULE}\n- 出力はJSONのみ(前置き・説明・コードフェンス禁止): {"items":[{"th":"単語","rom":"発音","ja":"意味","tone":"低"}]}`;
+  if(kind==="long")return `あなたはタイ語の先生です。タイ語学習者が長文を読む練習をするために、次の単語を使った短い文章を作ってください。\n${info}\n条件:\n- 友達へのメッセージや日常の出来事など、自然につながる5〜6文\n- 単語を1回以上使う。各文は1要素にする\n${common}`;
+  return `あなたはタイ語の先生です。次の単語の文例を作ってください。\n${info}\n条件:\n- 3文。1つ目は短い文(3〜6語)、2つ目はふつうの長さ、3つ目は長め(2つの節をつなげた15語前後)\n- 各文に必ず上の単語を使う\n${common}`;
+}
+function gen(kind,fresh){
+  if(!exW)return;
+  const word={...exW};
+  openChatGPTFlow(exPrompt(word,kind),result=>{
+    const a=result.indexOf("{"),b=result.lastIndexOf("}");
+    if(a<0||b<a)throw Error("json");
+    const items=(JSON.parse(result.slice(a,b+1)).items||[]).filter(x=>x&&typeof x.th==="string"&&typeof x.ja==="string");
+    if(!items.length)throw Error("empty");
+    exW=word;drawEx(items,kind);
+  });
+  $("ex").innerHTML=`<div class="exbox"><div class="hint">「${E(word.th)}」の${LBL[kind]}：ChatGPTの回答を下の入力欄に貼り付けてください。</div></div>`;
+}
+function drawEx(items,kind){
+  const w=exW;exItems=items;
+  $("ex").innerHTML=`<div class="exbox"><div class="exh"><b class="mt">${E(w.th)}</b><span class="hint">${E(w.ja||"")}</span><button class="del" id="exclose">閉じる</button></div>${
+    items.map((it,k)=>{
+      const rom=typeof it.rom==="string"?it.rom:"";
+      const parts=Array.isArray(it.parts)?it.parts.filter(p=>Array.isArray(p)&&p.length>=3):[];
+      return `<div class="exi"><div class="exth">${hl(it.th,w.th)}<button class="say2" data-t="${E(it.th)}" aria-label="発音を聞く">🔊</button></div>${rom?`<div class="ipa">${E(ipaS(rom))}</div><div class="rom2">${E(rom)}</div>`:""}${it.tone?`<div class="hint">声調: ${E(it.tone)}</div>`:""}<div class="ja">${E(it.ja)}</div>${parts.length?`<details><summary>単語に分解</summary><table><tr><th>タイ語</th><th>発音</th><th>IPA</th><th>意味</th></tr>${parts.map(p=>`<tr><td class="t">${E(p[0])}</td><td class="r">${E(p[1])}</td><td class="i">${E(ipa(String(p[1])))}</td><td>${E(p[2])}</td></tr>`).join("")}</table></details>`:""}<div class="exact" style="margin-top:6px">${kind==="tone"&&rom?`<button class="exsent" data-i="${k}">📖 文例</button>`:""}${rom?(D.some(d=>d[0]===it.th&&d[2]===it.ja)?'<button disabled>登録済み</button>':`<button class="exadd" data-i="${k}">＋ 追加</button>`):""}</div></div>`}).join("")
+  }${exBack?`<div class="exact"><button id="exback">← 「${E(exBack.w.th)}」の${LBL[exBack.kind]}へ戻る</button></div>`:""}<div class="exact"><button id="exmore" data-k="${kind}">別の${LBL[kind]}</button>${kind==="ex"?'<button id="exlong">長文で読む</button>':'<button id="exshort">文例を見る</button>'}</div></div>`;
+}
+$("ex").onclick=e=>{
+  const t=e.target.closest("button");if(!t)return;
+  if(t.classList.contains("say2"))say(t.dataset.t);
+  else if(t.classList.contains("exadd")){
+    const it=exItems[+t.dataset.i];if(!it)return;
+    const parts=Array.isArray(it.parts)?it.parts.filter(p=>Array.isArray(p)&&p.length>=3).map(p=>[String(p[0]),String(p[1]),String(p[2])]):[];
+    const n=addEntries([{th:it.th,rom:it.rom||"",ja:it.ja,parts}]);
+    t.textContent=n?"追加しました ✓":"登録済み";t.disabled=true;
+  }
+  else if(t.classList.contains("exsent")){
+    const it=exItems[+t.dataset.i];if(!it)return;
+    openEx({th:it.th,rom:it.rom||"",ja:it.ja},"ex",{w:exW,kind:"tone"});
+  }
+  else if(t.id==="exback"){const b=exBack;if(b)openEx(b.w,b.kind)}
+  else if(t.id==="exclose")$("ex").innerHTML="";
+  else if(t.id==="exmore")gen(t.dataset.k,true);
+  else if(t.id==="exlong")gen("long",false);
+  else if(t.id==="exshort"||t.id==="exagain")gen("ex",t.id==="exagain");
+};
+$("tonebtn").onclick=()=>{
+  if(!deck.length)return;
+  const d=D[deck[i]];openEx({th:d[0],rom:d[1],ja:d[2]},"tone");
+};
+$("exbtn").onclick=()=>{
+  if(!deck.length)return;
+  const d=D[deck[i]];openEx({th:d[0],rom:d[1],ja:d[2]});
+};
+// テキスト選択 → 文例
+document.addEventListener("selectionchange",()=>{
+  try{
+    const sel=getSelection();const t=sel?String(sel).trim():"";
+    const n=sel&&sel.anchorNode;
+    const inCard=n&&$("v-card").contains(n.nodeType===1?n:n.parentNode);
+    if(t&&t.length<=40&&/[\u0E00-\u0E7F]/.test(t)&&inCard){selText=t;$("selgo").textContent=`「${t}」の文例を見る`;$("selbar").classList.remove("hide")}
+    else if(!t){setTimeout(()=>{if(!String(getSelection()).trim())$("selbar").classList.add("hide")},1500)}
+  }catch(e){}
+});
+$("selgo").onclick=()=>{
+  const m=D.find(d=>d[0]===selText);
+  openEx(m?{th:m[0],rom:m[1],ja:m[2]}:{th:selText,rom:"",ja:""});
+  $("selbar").classList.add("hide");
+};
+
+// ---- Web app enhancements: local search/edit, spaced repetition, backup, conversation ----
+const EDITKEY="thai-edits-v1",REVIEWKEY="thai-review-v1";
+let edits={},review={};
+try{edits=JSON.parse(localStorage.getItem(EDITKEY)||"{}")||{}}catch(e){}
+try{review=JSON.parse(localStorage.getItem(REVIEWKEY)||"{}")||{}}catch(e){}
+function applyEdits(){D.forEach((d,k)=>{const e=edits[k];if(e&&Array.isArray(e)&&e.length>=3){d[0]=e[0];d[1]=e[1];d[2]=e[2]}})}
+applyEdits();
+function reviewDue(th){const r=review[th];return !r||!r.next||r.next<=Date.now()}
+function updateReview(th,success){const r=review[th]||{level:0,wrong:0};if(success){r.level=Math.min(6,(r.level||0)+1);r.next=Date.now()+[0,1,3,7,14,30,60][r.level]*86400000}else{r.level=0;r.wrong=(r.wrong||0)+1;r.next=Date.now()}review[th]=r;localStorage.setItem(REVIEWKEY,JSON.stringify(review))}
+function drawReviewStats(){const due=D.filter(d=>reviewDue(d[0])).length;const mistakes=Object.values(review).reduce((s,r)=>s+(r.wrong||0),0);$("reviewstats").textContent=`復習対象 ${due} 語 / 全 ${D.length} 語 ・「まだ」合計 ${mistakes} 回`}
+$("reviewstart").onclick=()=>{filter="review";build();drawChips();drawCard();tab("card")};
+$("reviewreset").onclick=()=>{if(!confirm("復習履歴だけをリセットしますか？"))return;review={};localStorage.removeItem(REVIEWKEY);drawReviewStats()};
+$("search").oninput=drawSearch;
+function drawSearch(){const q=$("search").value.trim().toLocaleLowerCase();const matches=D.map((d,k)=>({d,k})).filter(x=>q&&(x.d.slice(0,3).join(" ").toLocaleLowerCase().includes(q))).slice(0,60);$("searchcount").textContent=q?`${D.filter(d=>d.slice(0,3).join(" ").toLocaleLowerCase().includes(q)).length} 件（最大60件表示）`:"タイ語・日本語・発音で検索してください";$("results").innerHTML=matches.map(({d,k})=>`<div class="result" data-index="${k}"><div class="thmini">${E(d[0])}</div><label>タイ語<input data-field="0" value="${E(d[0])}"></label><label>発音<input data-field="1" value="${E(d[1])}"></label><label>意味<input data-field="2" value="${E(d[2])}"></label><button class="saveedit">変更を保存</button> <button class="listen">🔊</button></div>`).join("")}
+$("results").onclick=e=>{const b=e.target.closest("button");if(!b)return;const box=b.closest(".result"),k=+box.dataset.index;if(b.classList.contains("listen")){say(D[k][0]);return}const v=[...box.querySelectorAll("input")].map(x=>x.value.trim());if(v.some(x=>!x)){toolMsg("空欄は保存できません");return}const old=D[k][0];D[k][0]=v[0];D[k][1]=v[1];D[k][2]=v[2];if(k>=BASE){custom[k-BASE]=D[k];saveC()}else{edits[k]=v;localStorage.setItem(EDITKEY,JSON.stringify(edits))}if(old!==v[0]){if(known.delete(old))known.add(v[0]);if(review[old]){review[v[0]]=review[old];delete review[old]}save();localStorage.setItem(REVIEWKEY,JSON.stringify(review))}build();drawCard();drawSearch();toolMsg("変更を保存しました")};
+function toolMsg(s){$("toolmsg").textContent=s}
+$("export").onclick=()=>{const obj={format:"thai-card-backup",version:1,created:new Date().toISOString(),custom,known:[...known],edits,review,rate:localStorage.getItem("thai-rate")||"0.85"};const blob=new Blob([JSON.stringify(obj,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="thai-card-backup-"+new Date().toISOString().slice(0,10)+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toolMsg("バックアップファイルを保存しました")};
+$("import").onclick=async()=>{const file=$("restore").files[0];if(!file){toolMsg("JSONファイルを選択してください");return}try{const o=JSON.parse(await file.text());if(o.format!=="thai-card-backup"||!Array.isArray(o.custom)||!Array.isArray(o.known)||typeof o.edits!=="object"||typeof o.review!=="object")throw Error("format");if(!confirm("現在の学習データをバックアップの内容に置き換えます。続けますか？"))return;custom=o.custom.filter(e=>Array.isArray(e)&&e.length>=3&&e.slice(0,3).every(v=>typeof v==="string"));D.length=BASE;custom.forEach(e=>D.push(e));known=new Set(o.known.filter(x=>typeof x==="string"));edits=o.edits||{};review=o.review||{};applyEdits();saveC();save();localStorage.setItem(EDITKEY,JSON.stringify(edits));localStorage.setItem(REVIEWKEY,JSON.stringify(review));if(o.rate)localStorage.setItem("thai-rate",String(o.rate));$("rate").value=localStorage.getItem("thai-rate")||"0.85";$("ratelabel").textContent=$("rate").value;build();drawChips();drawCard();drawMine();drawSearch();drawReviewStats();toolMsg("復元が完了しました")}catch(e){toolMsg("対応するバックアップJSONを読み込めませんでした")}};
+$("rate").value=localStorage.getItem("thai-rate")||"0.85";$("ratelabel").textContent=$("rate").value;$("rate").oninput=e=>{$("ratelabel").textContent=e.target.value;localStorage.setItem("thai-rate",e.target.value)};
+const dialogues={greeting:[[["สวัสดี","sà-wàt-dii","こんにちは"],["สบายดีไหม","sà-baai-dii-mǎi","元気ですか？"],["สบายดี ขอบคุณ","sà-baai-dii khɔ̀ɔp-khun","元気です、ありがとう"]],[["ทำอะไรอยู่","tham-à-rai-yùu","何してるの？"],["กำลังพักผ่อน","kam-lang-phák-phɔ̀ɔn","休んでいるよ"]]],food:[[["หิวไหม","hǐu-mǎi","お腹すいた？"],["หิวแล้ว","hǐu-lɛ́ɛo","お腹すいた"],["ไปกินข้าวกัน","pai-kin-khâao-kan","ご飯食べに行こう"]]],work:[[["วันนี้ยุ่งไหม","wan-níi-yûng-mǎi","今日は忙しい？"],["ยุ่งนิดหน่อย","yûng-nít-nɔ̀i","少し忙しい"],["ช่วยดูหน่อยได้ไหม","chûai-duu-nɔ̀i-dâai-mǎi","ちょっと見てもらえる？"]]],friend:[[["ว่างไหม","wâang-mǎi","暇？"],["ว่าง มีอะไรเหรอ","wâang mii-à-rai-rə̌ə","暇だよ、どうしたの？"],["ไปด้วยกันไหม","pai-dûai-kan-mǎi","一緒に行かない？"]]]};
+let dialogueIndex=0;function drawDialogue(){const a=dialogues[$("scene").value]||dialogues.greeting;const lines=a[dialogueIndex%a.length];$("dialogue").innerHTML=lines.map(x=>`<div class="dlg"><div class="thai">${E(x[0])} <button class="say2" data-say="${E(x[0])}">🔊</button></div><div class="rom2">${E(x[1])}</div><div class="translation">${E(x[2])}</div></div>`).join("")}
+$("scene").onchange=()=>{dialogueIndex=0;drawDialogue()};$("dialoguenext").onclick=()=>{dialogueIndex++;drawDialogue()};$("dialogue").onclick=e=>{const b=e.target.closest("[data-say]");if(b)say(b.dataset.say)};
+$("dialogueai").onclick=()=>{
+  const scene=$("scene").selectedOptions[0].textContent;
+  openChatGPTFlow(`タイ語初級者向けに「${scene}」の自然な短い会話を3往復作ってください。声調付き発音も付けてください。JSONだけで返答: {"items":[{"th":"タイ語","rom":"声調付き発音","ja":"日本語訳"}]}`,result=>{
+    const a=result.indexOf("{"),b=result.lastIndexOf("}");
+    const o=JSON.parse(result.slice(a,b+1));if(!Array.isArray(o.items)||!o.items.length)throw Error("format");
+    $("dialogue").innerHTML=o.items.map(x=>`<div class="dlg"><div class="thai">${E(x.th)} <button class="say2" data-say="${E(x.th)}">🔊</button></div><div class="rom2">${E(x.rom||"")}</div><div class="translation">${E(x.ja||"")}</div></div>`).join("");
+    toolMsg("ChatGPTの会話を取り込みました");
+  });
+};
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./sw.js").catch(()=>{});
+
+build();drawChips();drawCard();
+</script>
+</body>
+</html>

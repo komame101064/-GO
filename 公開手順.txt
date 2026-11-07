@@ -1,0 +1,10 @@
+พูดไทย — GitHub Pages 公開手順（追加費用0円）
+
+1. https://github.com/ で無料アカウントを作成・ログイン。
+2. 「New repository」で thai-card などの名前をつけ、Publicを選択して作成。
+3. リポジトリ画面の「Add file」→「Upload files」で、このZIPを展開した中の index.html、sw.js、manifest.webmanifest、icon.svg、icon-192.png、icon-512.png、.nojekyll をアップロードして Commit changes。ZIPそのものはアップロードしない。
+4. 「Settings」→「Pages」→「Build and deployment」→「Deploy from a branch」、Branchを main / (root) に設定して Save。
+5. 公開された https://ユーザー名.github.io/thai-card/ をAndroid Chromeで開く。反映まで数分かかることがあります。
+6. Chromeのメニュー（︙）→「ホーム画面に追加」または「アプリをインストール」。
+
+注意：GitHub Pagesは公開サイトです。学習記録は原則としてその端末のブラウザ内に保存されます。公開前にバックアップを取り、個人情報やAPIキーをコードに書かないでください。ChatGPTとの連携はコピー＆貼り付けで、ChatGPTの利用制限が適用されます。無料ホスティングの条件はサービス側で変更される可能性があります。
